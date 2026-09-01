@@ -39,5 +39,13 @@ public class PrefDataStore {
                 .subscribe();
     }
 
+    public Optional<String> getString(String key) {
+        return dataStore.data()
+                .map(prefs -> {
+                    var prefKey = PreferencesKeys.stringKey(key);
+                    return Optional.ofNullable(prefs.get(prefKey));
+                })
+                .blockingFirst();
+    }
 
 }
