@@ -17,6 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginBottom="128dp"
 
         />
     <Button
@@ -175,11 +177,12 @@
         android:text="AC"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/button_1"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_0"
         android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"
+        android:layout_marginBottom="256dp"
         />
     <Button
         android:id="@+id/button_0"
@@ -188,10 +191,11 @@
         android:text="0"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/button_2"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_ac"
         app:layout_constraintEnd_toStartOf="@+id/button_equal"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="256dp"
         />
     <Button
         android:id="@+id/button_equal"
@@ -200,10 +204,11 @@
         android:text="="
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/button_3"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_0"
         app:layout_constraintEnd_toStartOf="@+id/button_plus"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="256dp"
         />
     <Button
         android:id="@+id/button_plus"
@@ -212,10 +217,11 @@
         android:text="+"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@+id/button_minus"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_equal"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="32dp"
+        android:layout_marginBottom="256dp"
         />
 
 

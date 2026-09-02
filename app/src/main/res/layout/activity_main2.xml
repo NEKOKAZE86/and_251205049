@@ -11,7 +11,7 @@
         android:id="@+id/button_a"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button A"
+        android:text="明示的Intent"
         app:layout_constraintTop_toTopOf="@id/button_b"
         app:layout_constraintEnd_toStartOf="@id/button_b"
         app:layout_constraintStart_toStartOf="parent"/>
@@ -19,7 +19,7 @@
         android:id="@+id/button_b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button B"
+        android:text="暗黙的Intent"
         app:layout_constraintTop_toTopOf="@id/button_a"
         app:layout_constraintStart_toEndOf="@id/button_a"
         app:layout_constraintEnd_toEndOf="parent"/>
@@ -53,5 +53,24 @@
         android:layout_margin="16dp"
         android:visibility="gone"
         />
+    <EditText
+        android:id="@+id/intent_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/intent_button"
+        app:layout_constraintTop_toBottomOf="@id/textView_gone"
+        />
+   <Button
+       android:id="@+id/intent_button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="intent"
+       app:layout_constraintStart_toEndOf="@+id/intent_editText"
+       app:layout_constraintTop_toTopOf="@+id/intent_editText"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
