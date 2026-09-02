@@ -2,6 +2,7 @@ package jp.ac.meijou.android.s251205049;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -34,7 +35,18 @@ public class MainActivity3 extends AppCompatActivity {
     binding.button0.setOnClickListener(view->{
 
     });
+    //okボタン
+    binding.buttonOk.setOnClickListener(view->{
+        var ok_intent = new Intent();
+        ok_intent.putExtra("ret","OK");
+        setResult(RESULT_OK, ok_intent);
+        finish();
+    });
+    //cancelボタン
+    binding.buttonCancel.setOnClickListener(view->{
+        setResult(RESULT_CANCELED);
+        finish();
+    });
+
     }
-
-
 }
